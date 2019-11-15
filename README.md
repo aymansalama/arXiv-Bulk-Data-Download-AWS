@@ -7,10 +7,13 @@ PDFs are available on S3 in the arxiv requester pays bucket. They are grouped in
 
 
 Get EC2 Instance on AWS 
-Install s3cmd command
+**Install s3cmd command**
 
 ```sudo yum install s3cmd```
 
-Download the whole bucket. Please note that you will be charged for the download traffic based on AWS pricing. 
+**Download the whole bucket. Please note that you will be charged for the download traffic based on AWS pricing.** 
 
 ```s3cmd get --recursive --skip-existing s3://arxiv/src/ --requester-pays```
+
+**Check the recent size of the bucket**
+```s3cmd du -H s3://arxiv/src/ --requester-pays```
