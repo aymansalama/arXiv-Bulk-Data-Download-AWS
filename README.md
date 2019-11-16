@@ -21,4 +21,4 @@ Get EC2 Instance on AWS
 
 **List all files in the bucket**
 
-```s3cmd ls -ltr s3://arxiv/src/ --requester-pays```
+```s3cmd ls -l s3://arxiv/src/ --requester-pays```
