@@ -16,4 +16,9 @@ Get EC2 Instance on AWS
 ```s3cmd get --recursive --skip-existing s3://arxiv/src/ --requester-pays```
 
 **Check the recent size of the bucket**
+
 ```s3cmd du -H s3://arxiv/src/ --requester-pays```
+
+**List all files in the bucket**
+
+```s3cmd ls -ltr s3://arxiv/src/ --requester-pays```
