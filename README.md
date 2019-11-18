@@ -11,6 +11,9 @@ Get EC2 Instance on AWS
 
 ```sudo yum install s3cmd```
 
+***In case you get an error like: No package s3cmd available.***
+```sudo yum --enablerepo=epel install s3cmd```
+
 **Download the whole bucket. Please note that you will be charged for the download traffic based on AWS pricing.** 
 
 ```s3cmd get --recursive --skip-existing s3://arxiv/src/ --requester-pays```
